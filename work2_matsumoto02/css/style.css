@@ -34,18 +34,16 @@ img {
     border: none;
 }
 
-.wrap {
+.nav_list {
     max-width: 960px;
     display: flex;
-    margin: 0 auto;
+    margin: 20px auto 20px;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
 }
+
 ul {
     display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
 }
 
 li {
@@ -58,8 +56,9 @@ li:last-child {
 }
 
 @media screen and (max-width: 767px) {
-    .wrap {
+    .nav_list {
         display: block;
+        margin: 20px;
     }
 
     ul {
@@ -67,7 +66,6 @@ li:last-child {
     }
 
     li {
-        width: 100%;
         border-right: none;
         border-bottom: 2px solid black;
         padding: 20px 0px;
