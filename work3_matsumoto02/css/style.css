@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: black;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", Yu Gothic, "メイリオ",
+        "Hiragino Kaku Gothic", "Hiragino Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+.Survice {
+    max-width: 960px;
+    background-color: #eeeeee;
+}
+
+h2 {
+    padding: 70px 0px;
+    color: #0b8272;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Survice ul {
+    display: flex;
+    column-gap: 25px;
+    padding: 0px 35px;
+}
+
+.Survice_ListEl img {
+    width: 100%;
+}
+
+.Survice_ListDetail {
+    padding: 10px;
+    background-color: white;
+}
+
+.Survice_ListDetail h3 {
+    padding: 3px 5px;
+    margin-bottom: 5px;
+    border-left: 8px solid #0b8272;
+    color: #0b8272;
+    font-size: 22px;
+}
+
+.Survice_ListDetail p {
+    line-height: 1.5em;
+}
+
+.footer {
+    padding: 30px;
+}
+
+@media screen and (max-width: 400px) {
+    .Survice ul {
+        display: block;
+        padding: 0px 10px;
+    }
+
+    .Survice_ListEl {
+        margin-bottom: 20px;
+    }
+
+    .Survice_ListEl img {
+        width: 100%;
+    }
+}
