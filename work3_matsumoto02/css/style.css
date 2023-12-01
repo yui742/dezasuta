@@ -34,9 +34,13 @@ img {
     border: none;
 }
 
-.Survice {
-    max-width: 960px;
+body {
     background-color: #eeeeee;
+}
+
+.service {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 h2 {
@@ -46,22 +50,23 @@ h2 {
     text-align: center;
 }
 
-.Survice ul {
-    display: flex;
+.service ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 25px;
     padding: 0px 35px;
 }
 
-.Survice_ListEl img {
+.service_list img {
     width: 100%;
 }
 
-.Survice_ListDetail {
+.service_list_detail {
     padding: 10px;
     background-color: white;
 }
 
-.Survice_ListDetail h3 {
+.service_list_detail h3 {
     padding: 3px 5px;
     margin-bottom: 5px;
     border-left: 8px solid #0b8272;
@@ -69,25 +74,21 @@ h2 {
     font-size: 22px;
 }
 
-.Survice_ListDetail p {
+.service_list_detail p {
     line-height: 1.5em;
 }
 
-.footer {
-    padding: 30px;
-}
-
 @media screen and (max-width: 400px) {
-    .Survice ul {
+    .service ul {
         display: block;
         padding: 0px 10px;
     }
 
-    .Survice_ListEl {
+    .service_list {
         margin-bottom: 20px;
     }
 
-    .Survice_ListEl img {
+    .service_list img {
         width: 100%;
     }
 }
