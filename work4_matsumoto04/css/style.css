@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #4f260b;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ヘッダー */
+/* body { */
+/* background-color: gray; */
+/* } */
+
+.header_wrap {
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 7% 0 3%;
+}
+
+.header_logo {
+    width: 226px;
+}
+
+.pc_nav ul {
+    display: flex;
+}
+
+.pc_nav ul li {
+    width: 105px;
+    margin-left: 55px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+.main_wrap {
+    max-width: 1920px;
+    background-color: #e8d9bf;
+}
+
+/* Have_a_happy_day_From_a_cup_of_coffee */
+.top_wrap {
+    padding: 104px 280px 0px 280px;
+    text-align: center;
+}
+
+.top_wrap .text_01 {
+    margin-bottom: 46px;
+    font-size: 30px;
+}
+
+.top_wrap .text_02 {
+    margin-bottom: 25px;
+    font-size: 81px;
+    line-height: 99px;
+}
+
+.top_wrap .text_03 {
+    font-size: 23px;
+    line-height: 38px;
+}
+
+/* about_us */
+.about_us_wrap {
+    max-width: 1920px;
+    padding: 96px 200px 0px 216px;
+}
+
+.about_us_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_us_inner img {
+    width: 500px;
+    height: 560px;
+    object-fit: cover;
+    border-radius: 0px 0px 80px 0px;
+}
+
+.about_us_text {
+    margin: 57px auto 0px 79px;
+}
+
+.about_us_text img {
+    width: 272px;
+    height: 77px;
+    margin-bottom: 49px;
+}
+
+.about_us_text .text_01 {
+    margin-bottom: 23px;
+    font-size: 44px;
+    line-height: 61px;
+}
+
+.about_us_text .text_02 {
+    line-height: 26px;
+}
+
+/* menu */
+.menu_wrap {
+    padding: 96px 225px 0px 216px;
+}
+
+.menu_img {
+    text-align: center;
+}
+.menu_img img {
+    width: 8%;
+    height: 4%;
+}
+
+.menu_inner ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 59px;
+    margin: 9px 0px;
+}
+
+.menu_inner img {
+    width: 328px;
+    border-radius: 0px 42px 0px 0px;
+    margin: 0 auto;
+}
+
+.menu_inner .text_01 {
+    margin: -10px 10px 11px 10px;
+    font-size: 38px;
+    color: #d30202;
+}
+
+.menu_inner .text_02 {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+/* gallery */
+.gallery_wrap {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.gallery_wrap ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* event */
+.event_wrap {
+    padding: 96px 225px 0px 216px;
+}
+.event_inner {
+    text-align: center;
+}
+
+.event_wrap ul {
+    border: solid 3px #4f260b;
+    background-color: white;
+    padding: 37px 174px 37px 162px;
+}
+
+.event_inner li {
+    display: flex;
+}
+
+.event_inner .text_01 {
+    font-size: 23px;
+    line-height: 45px;
+}
+
+.event_inner span {
+    padding-left: 0.5em;
+}
+
+.event_inner .text_02 {
+    font-size: 23px;
+    line-height: 45px;
+    text-decoration: underline;
+}
+
+/* access */
+.access_wrap {
+    text-align: center;
+}
+
+.access_map iframe {
+    width: 100%;
+    height: 471px;
+    border: none;
+}
+
+/* footer */
+.footer_wrap {
+    padding: 75px 200px 74px 195px;
+    background-color: white;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: space-evenly;
+    width: 630px;
+}
+
+.footer_inner img {
+    height: 50px;
+}
+
+.footer_text ul {
+    padding-left: 50px;
+}
+
+.footer_text .text {
+    font-size: 20px;
+    line-height: 39px;
+}
+.footer_text p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 73px;
+}
