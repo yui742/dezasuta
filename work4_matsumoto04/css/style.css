@@ -170,7 +170,6 @@ img {
 }
 
 .menu_img {
-    width: 1000px;
     margin-bottom: 35px;
     text-align: center;
 }
@@ -312,6 +311,7 @@ img {
 
 .footer_copy {
     font-size: 16px;
+    color: black;
     text-align: center;
     margin-top: 73px;
 }
@@ -421,5 +421,132 @@ img {
         font-size: 18px;
         font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
             "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    }
+
+    .top .text_02 {
+        font-size: 65px;
+    }
+
+    .top .text_03 {
+        font-size: 19px;
+    }
+
+    .about_us_text .text_01 {
+        font-size: 37px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .top .sp_br {
+        display: none;
+    }
+
+    .about_us_sp_img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .top .text_01 {
+        font-size: 35px;
+        margin-bottom: 52px;
+    }
+
+    .top .text_02 {
+        font-size: 71px;
+        margin-bottom: 35px;
+    }
+
+    .top .text_03 {
+        font-size: 32px;
+        line-height: 1.8;
+    }
+
+    .about_us_inner {
+        display: block;
+    }
+
+    .about_us_img img {
+        display: none;
+    }
+
+    .menu_inner ul {
+        display: block;
+        padding: 116px;
+    }
+
+    .about_us_text {
+        width: 100%;
+        padding: initial;
+    }
+
+    .about_us_text_img {
+        text-align: center;
+    }
+
+    .about_us_text_img img {
+        width: 43%;
+        margin-bottom: 38px;
+    }
+
+    .about_us_sp_img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about_us_text_inner {
+        padding: 0 41px;
+    }
+
+    .about_us_text .text_01 {
+        font-size: 73px;
+        margin-top: 59px;
+        line-height: 1.3;
+    }
+
+    .about_us_text .text_02 {
+        font-size: 33px;
+        line-height: 1.7;
+    }
+
+    .menu {
+        padding: 89px 10px 0;
+    }
+
+    .menu_img img {
+        width: 24%;
+    }
+
+    .menu_inner ul li {
+        margin-top: 30px;
+    }
+
+    .menu_inner ul li img {
+        width: 100%;
+    }
+
+    .gallary {
+        width: 100%;
+    }
+
+    .gallary_img ul li:nth-child(0),
+    li:nth-child(1),
+    li:nth-child(2),
+    li:nth-child(4),
+    li:nth-child(5) {
+        display: none;
+    }
+
+    .gallary_img ul li:nth-child(3) {
+        width: 100%;
+    }
+
+    .footer_inner {
+        display: block;
+        padding-left: 30px;
+    }
+
+    .footer_text {
+        margin-top: 30px;
     }
 }

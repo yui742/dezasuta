@@ -14,7 +14,12 @@
     <!-- ヘッダー -->
     <header id="to_top">
         <div id="header" class="header_slider">
-            <div><img src="images/pc_first-100.jpg" alt="店内の様子"></div>
+            <div>
+                <picture>
+                    <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width: 767px)">
+                    <img src="images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
+            </div>
         </div>
         <div class="header_wrap">
             <h1 class="header_logo"><img src="images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE"></h1>
@@ -39,20 +44,13 @@
             </nav>
         </div>
     </header>
-    <script>
-        $(function () {
-            $('.sp_btn, sp_nav li').on('click', function () {
-                $('.sp_nav').fadeToggle();
-                $('.sp_btn').toggleClass('open');
-            });
-        });
-    </script>
     <main class="main">
         <!-- Have a happy day From a cup of coffee -->
         <section class="top">
             <p class="text_01">Have a happy day From a cup of coffee.</p>
             <p class="text_02">ハッピーに溢れる1日を<br>1杯のコーヒーから。</p>
-            <p class="text_03">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
+            <p class="text_03">毎日を丁寧に大切に過ごしたい。<br class="sp_br">だからこそ一杯一杯丁寧にコーヒーを入れ<br>足を運んでくれるお客さんには落ち着く空間と<br
+                    class="sp_br">こだわりのコーヒーを提供したい。</p>
         </section>
         <!-- about_us -->
         <section id="about_us" class="about">
@@ -60,11 +58,20 @@
                 <div class="about_us_img"><img src=" images/about_us@2x-100.jpg" alt="about_us">
                 </div>
                 <div class="about_us_text">
-                    <h2><img src="images/about_us@2x.png" alt="ABOUT_US"></h2>
-                    <p class="text_01">私たちが提供する<br>こだわりのコーヒー</p>
-                    <p class="text_02">
-                        サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
-                    </p>
+                    <!-- <div class="about_us_img"> -->
+                    <div class="about_us_text_img">
+                        <h2><img src="images/about_us@2x.png" alt="ABOUT_US"></h2>
+                    </div>
+                    <!-- </div> -->
+                    <div class="about_us_sp_img">
+                        <img src="images/about_us@2x-100.jpg" alt="about_us_sp">
+                    </div>
+                    <div class="about_us_text_inner">
+                        <p class="text_01">私たちが提供する<br>こだわりのコーヒー</p>
+                        <p class="text_02">
+                            サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -132,14 +139,17 @@
                     <ul>
                         <li>
                             <time datetime="2020-06-23" class="text_01">2020.06.23</time>
+                            <br class="event_sp_br">
                             <a href="" class="text_02">7月はイベント出店のため0/0お休みします</a>
                         </li>
                         <li>
                             <time datetime="2020-03-15" class="text_01">2020.03.15</time>
+                            <br class="event_sp_br">
                             <a href="" class="text_02">春の新商品新発売。話題のあのブランドとコラボ</a>
                         </li>
                         <li>
                             <time datetime="2020-02-06" class="text_01">2020.02.06</time>
+                            <br class="event_sp_br">
                             <a href="" class="text_02">コーヒーの日で30％OFFイベントを開催［3日間限定］></a>
                         </li>
                     </ul>
@@ -176,6 +186,14 @@
     <div id="totop">
         <a href="#"><img src="images/to_top@2x.png" alt="to_top"></a>
     </div>
+    <script>
+        $(function () {
+            $('.sp_btn, sp_nav li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            });
+        });
+    </script>
 </body>
 
 </html>
