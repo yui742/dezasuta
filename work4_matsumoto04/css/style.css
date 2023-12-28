@@ -565,14 +565,6 @@ img {
         width: 38%;
     }
 
-    .gallary li:nth-child(3) {
-        display: block;
-    }
-
-    .gallary li:not(:nth-child(3)) {
-        display: none;
-    }
-
     /* event */
     .event {
         padding: 27px 19px 0;
