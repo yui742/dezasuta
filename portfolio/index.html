@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>matsumoto yui's portfolio site</title>
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -25,22 +25,27 @@
         <div class="mv"><img src="images/mv.jpg" alt="メインビジュアル">
             <h2 class="mv_text"><img src="images/mv_title.png" alt="タイトル"></h2>
         </div>
-        <div class="about">
+        <section class="about">
             <div class="about_inner">
                 <h2 class="about_title"><img src="images/about_title.png" alt="About"></h2>
+                <div class="about_shape"><img src="images/about_shape.png" alt="aboutシェイプ"></div>
+                <div class="about_content">
+                    <p class="about_text">一人一人オンリーワンの地図を持っています。<br>
+                        道を尋ねられたら、<br>
+                        相手の地図で道を案内しなければ的外れな場所を案内してしまいます。<br>
+                        お客様とエンドユーザーの悩みと要望、思考を理解し、<br>
+                        情報に基づいた最適な道を提案したいです。</p>
+                    <div class="about_button_wrap">
+                        <button class="about_button"><img src="images/read_more.png" alt="read more"></button>
+                    </div>
+                    <a href="#" class="arrow-right"></a>
+                </div>
             </div>
-            <div class="about_content">
-                <p class="about_text">一人一人オンリーワンの地図を持っています。<br>
-                    道を尋ねられたら、<br>
-                    相手の地図で道を案内しなければ的外れな場所を案内してしまいます。<br>
-                    お客様とエンドユーザーの悩みと要望、思考を理解し、<br>
-                    情報に基づいた最適な道を提案したいです。</p>
-                <button class="about_button"><img src="images/read_more.png" alt="read more"></button>
-                <a href="#" class="arrow-right"></a>
-            </div>
-        </div>
-        <div class="skill">
+        </section>
+        <section class="skill">
             <div class="skill_inner">
+                <div class="skill_shape01"><img src="images/skill_shape01.png" alt="skillシェイプ01"></div>
+                <div class="skill_shape02"><img src="images/skill_shape02.png" alt="skillシェイプ02"></div>
                 <h2 class="skill_title"><img src="images/skill_title.png" alt="Skill"></h2>
                 <div class="skill_content_wrap">
                     <div class="skill_content">
@@ -71,11 +76,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="skill_shape03"><img src="images/skill_shape03.png" alt="skillシェイプ03"></div>
             </div>
-        </div>
-        <div class="works">
+        </section>
+        <dsection class="works">
             <h2 class="works_title"><img src="images/works_title.png" alt="Works"></h2>
             <div class="works_inner">
+                <div class="works_shape01"><img src="images/works_shape01.png" alt="worksシェイプ01"></div>
                 <div class="works_content">
                     <a href="#"><img src="images/banner01.jpg" alt="学割バナー"></a>
                     <p class="works_text">バナー</p>
@@ -101,11 +108,13 @@
                     <p class="works_text">美容室のwebサイト</p>
                     <p class="works_tool">Photoshop/Illustrator</p>
                 </div>
+                <div class="works_shape02"><img src="images/works_shape02.png" alt="worksシェイプ02"></div>
             </div>
-        </div>
+        </dsection>
         <div class="contact">
-            <h2 class="contact_title"><img src="images/contact_title.png" alt="Contact"></h2>
             <div class="contact_inner">
+                <div class="contact_shape"><img src="images/contact_shape.png" alt="contactシェイプ"></div>
+                <h2 class="contact_title"><img src="images/contact_title.png" alt="Contact"></h2>
                 <form>
                     <label for="name">お名前</label>
                     <input id="name" type="text" name="name" placeholder="山田　太郎">
@@ -113,6 +122,7 @@
                     <input id="email" type="text" name="name" placeholder="メールアドレスを入力したください">
                     <label for="msg">お問い合わせ内容</label>
                     <textarea id="msg" name="name" placeholder="お問い合わせいただきありがとうございます"></textarea>
+                    <p class="conttact_text">確認送信ボタンをクリックした後、入力確認画面が表示されずにお問い合わせ内容が送信されます。ご注意ください。</p>
                     <button type="submit" name="button" value="送信"><img src="images/send_mail.png"
                             alt="send_mail"></button>
                 </form>
@@ -120,16 +130,19 @@
         </div>
     </main>
     <footer>
-        <button class="footert_button"><img src="images/back_to_page.png" alt="back to page"></button>
-        <a href="#" class="arrow-left"></a>
         <div class="footer_inner">
-            <ul>
-                <li><img src="images/about.png" alt="ABOUT"></li>
-                <li><img src="images/works.png" alt="WORKS"></li>
-                <li><img src="images/contact.png" alt="CONTACT"></li>
-            </ul>
+            <div class="footer_shape"><img src="images/footer_shape.png" alt="footerシェイプ"></div>
+            <button class="footert_button"><img src="images/back_to_page.png" alt="back to page"></button>
+            <a href="#" class="arrow-left"></a>
+            <div class="footer_nav">
+                <ul>
+                    <li><img src="images/about.png" alt="ABOUT"></li>
+                    <li><img src="images/works.png" alt="WORKS"></li>
+                    <li><img src="images/contact.png" alt="CONTACT"></li>
+                </ul>
+            </div>
+            <p class="footer_copy"><img src="images/footer_copy.png" alt="コピー"></p>
         </div>
-        <p class="footer_copy">©︎yui matsumoto portfolio</p>
     </footer>
 </body>
 
