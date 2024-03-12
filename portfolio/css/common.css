@@ -63,6 +63,10 @@ body {
     margin: 25px auto 25px;
 }
 
+.nav_list h1 img {
+    width: 90px;
+}
+
 .nav_list ul {
     display: flex;
 }
@@ -71,6 +75,17 @@ body {
     padding: 0px 30px;
 }
 
+.li_about {
+    width: 66px;
+}
+
+.li_works {
+    width: 72px;
+}
+
+.li_contact {
+    width: 89px;
+}
 .nav_list li:last-child {
     padding-right: 0px;
 }

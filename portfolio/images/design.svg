@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 261.78 262">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f4ead0;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #321d0b;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 10px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="131" cy="131" r="131"/>
+  <rect class="cls-2" x="71.59" y="94.58" width="113" height="78.47"/>
+  <line class="cls-2" x1="98.09" y1="130.98" x2="158.09" y2="71.04"/>
+</svg>

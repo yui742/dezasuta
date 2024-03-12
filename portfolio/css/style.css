@@ -2,31 +2,47 @@
 
 /* メインビジュアル */
 
+.mv {
+    width: 100%;
+}
+
 .mv_text img {
-    width: 50%;
+    width: 978px;
     position: absolute;
     top: 470px;
-    right: 472px;
+    left: 232px;
     text-align: center;
 }
 
-.about_inner {
+/* aboutセクション */
+
+.about {
     max-width: 1100px;
-    margin: 0px auto;
+    margin: 0 auto;
+}
+.about_inner {
     padding-top: 307px;
     position: relative;
 }
 
 .about_title {
-    top: 10px;
-    transform: rotate(90deg);
-    transform-origin: 0 50%;
+    top: 27%;
+    position: absolute;
+    left: -6%;
+}
+
+.about_title img {
+    width: 100px;
 }
 
 .about_shape {
     position: absolute;
-    top: 88.791667vw;
-    right: -2.6041666667vw;
+    top: 23%;
+    right: -9%;
+}
+
+.about_shape {
+    width: 28%;
 }
 
 .about_text {
@@ -45,4 +61,8 @@
     background: #f46159;
     border-radius: 9999px;
     border: none;
+}
+
+.about_button img {
+    width: 101px;
 }
