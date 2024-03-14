@@ -13,7 +13,7 @@
     <!-- ヘッダー -->
     <header>
         <div class="nav_list">
-            <h1><img src="images/logo.svg" alt="ロゴ"></h1>
+            <h1 class="nav_logo"><img src="images/logo.svg" alt="ロゴ"></h1>
             <ul>
                 <li class="li_about"><img src="images/about.svg" alt="ABOUT"></li>
                 <li class="li_works"><img src="images/works.svg" alt="WORKS"></li>
@@ -22,12 +22,13 @@
         </div>
     </header>
     <main>
-        <div class="mv"><img src="images/mv.svg" alt="メインビジュアル">
-            <h2 class="mv_text"><img src="images/mv_title.svg" alt="タイトル"></h2>
+        <div class="mv">
+            <div class="mv_img">
+                <h2 class="mv_text"><img src="images/mv_title.svg" alt="タイトル"></h2>
+            </div>
         </div>
         <section class="about">
             <div class="about_inner">
-                <div class="about_shape"><img src="images/about_shape.svg" alt="aboutシェイプ"></div>
                 <h2 class="about_title"><img src="images/about_title.svg" alt="About"></h2>
                 <div class="about_content">
                     <p class="about_text">一人一人オンリーワンの地図を持っています。<br>
@@ -43,32 +44,32 @@
             </div>
         </section>
         <section class="skill">
+            <div class="skill_shape04"><img src="images/skill_shape04.svg" alt="skillシェイプ04"></div>
             <div class="skill_inner">
-                <div class="skill_shape04"><img src="images/skill_shape04.svg" alt="skillシェイプ04"></div>
-                <div class="skill_shape01"><img src="images/skill_shape01.svg" alt="skillシェイプ01"></div>
                 <div class="skill_shape02"><img src="images/skill_shape02.svg" alt="skillシェイプ02"></div>
-                <h2 class="skill_title"><img src="images/skill_title.svg" alt="Skill"></h2>
+                <div class="skill_shape01"><img src="images/skill_shape01.svg" alt="skillシェイプ01"></div>
+                <div class="skill_title"><img src="images/skill_title.svg" alt="Skill"></div>
                 <div class="skill_content_wrap">
-                    <div class="skill_content">
+                    <div class="design_content">
                         <img src="images/design.svg" alt="デザインアイコン">
                         <h3>デザイン</h3>
                         <p class="skill_text01">
                             バナー、webサイトのデザインができます。お客様の視点、ユーザーの視点に立ち、課題の本質を理解するよう心掛けています。また、コーディングのしやすいデザインになるよう意識しています。
                         </p>
-                        <p class="skill_text02">使用ツール</p>
+                        <div class="skill_text02">使用ツール</div>
                         <div class="skill_tool">
                             <p class="tool_content">Photoshop</p>
                             <p class="tool_content">Illustrator</p>
                         </div>
                     </div>
-                    <div class="skill_content">
+                    <div class="coding_content">
                         <img src="images/coding.svg" alt="コーディングアイコン">
                         <h3>コーディング</h3>
                         <p class="skill_text01">
                             HTML、CSS、jQueryを使いサイトをコーディングすることができます。誰が見ても分かりやすいコーディングになるよう心掛けています。
                         </p>
-                        <p class="skill_tool">使用ツール</p>
-                        <div class="tool_inner">
+                        <p class="skill_text02">使用ツール</p>
+                        <div class="skill_tool">
                             <p class="tool_content">HTML</p>
                             <p class="tool_content">CSS</p>
                             <p class="tool_content">jQuary</p>
@@ -77,7 +78,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="skill_shape03"><img src="images/skill_shape03.png" alt="skillシェイプ03"></div>
+                <div class="skill_shape03"><img src="images/skill_shape03.svg" alt="skillシェイプ03"></div>
             </div>
         </section>
         <section class="works">

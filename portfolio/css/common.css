@@ -43,6 +43,11 @@ ul {
     list-style: none;
 }
 
+li {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
 img {
     max-width: 100%;
     vertical-align: bottom;
@@ -63,8 +68,8 @@ body {
     margin: 25px auto 25px;
 }
 
-.nav_list h1 img {
-    width: 90px;
+.nav_logo {
+    width: 8%;
 }
 
 .nav_list ul {
@@ -77,14 +82,18 @@ body {
 
 .li_about {
     width: 66px;
+    /* width: 6%; */
 }
 
 .li_works {
     width: 72px;
+    /* width: 7%; */
 }
 
 .li_contact {
     width: 89px;
+    /* width: 8%; */
+    quotes: inherit;
 }
 .nav_list li:last-child {
     padding-right: 0px;
