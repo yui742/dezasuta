@@ -2,25 +2,27 @@
 
 /* メインビジュアル */
 
-.mv {
-    max-width: 1920px;
-}
-
 .mv_img {
-    background-image: url("../images/mv.jpg");
+    /* background-image: url("../images/mv.jpg");
     padding-top: 66%;
     background-size: contain;
     background-repeat: no-repeat;
+    position: relative; */
+    height: 1149px;
     position: relative;
+}
+
+.mv_img img {
+    width: 100%;
 }
 
 .mv_text {
     background-color: transparent;
     text-align: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-53%, -50%);
+    top: 478px;
+    left: 230px;
+    /* transform: translate(-53%, -50%); */
 }
 
 .mv_text img {
@@ -33,29 +35,36 @@
     max-width: 1366px;
     margin: 0 auto;
 }
+
 .about_inner {
-    background-image: url(../images/about_shape.png);
+    /* background-image: url(../images/about_shape.png);
     background-repeat: no-repeat;
-    background-position: 93% 272px;
+    background-position: 93% 272px; */
+    position: relative;
     display: flex;
-    padding-top: 22%;
+    padding-top: 3%;
 }
 
 .about_title {
-    width: 100px;
-    padding-left: 64px;
+    width: 100%;
+    padding-left: 4%;
 }
 
 .about_shape {
-    background-image: url(../images/about_shape.png);
-    background-repeat: no-repeat;
+    position: absolute;
+    /* top: px; */
+    left: 74%;
+    z-index: 1;
+    /* background-image: url(../images/about_shape.png);
+    background-repeat: no-repeat; */
     /* background-position: ;
     width: 28%; */
 }
 
 .about_content {
-    padding-left: 15%;
-    padding-top: 8%;
+    top: 29%;
+    left: 27%;
+    position: absolute;
 }
 
 .about_text {
@@ -70,8 +79,9 @@
     padding-top: 13%;
 }
 .about_button {
-    width: 36%;
-    padding: 4% 0px;
+    width: 224px;
+    height: 60px;
+    /* padding: 4% 0px; */
     background: #f46159;
     border-radius: 9999px;
     border: none;
@@ -90,35 +100,41 @@
 }
 
 .skill_inner {
+    /* background-image: url(../images/skill_shape02.svg),
+        url(../images/skill_shape01.svg);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    /* background-position: 0px 189px; */
+    height: 1332px;
     padding-top: 14%;
     margin: 0 auto;
-    /* position: relative; */
+    position: relative;
 }
 
 .skill_shape04 {
     position: absolute;
     width: 100%;
-    top: -94%;
+    top: -17%;
 }
 
 .skill_shape01 {
     position: absolute;
+    z-index: 1;
     width: 15%;
-    top: 42%;
+    top: 7%;
     left: 7%;
 }
 
 .skill_shape02 {
     position: absolute;
     width: 90%;
-    /* top: 4%; */
 }
 
 .skill_title {
     position: absolute;
     width: 8%;
     right: 5%;
-    top: 94%;
+    top: 22%;
 }
 
 .skill_content_wrap {
@@ -126,7 +142,7 @@
     display: flex;
     position: absolute;
     padding-top: 190px;
-    padding-left: 133px;
+    padding-left: 125px;
     margin: 0 auto;
 }
 
@@ -147,32 +163,27 @@
 }
 
 .skill_content_wrap h3 {
-    padding-top: 30px;
+    padding-top: 15px;
     background-color: transparent;
     font-size: 36px;
 }
 
 .skill_text01 {
-    padding-top: 30px;
+    padding-top: 2px;
     background-color: transparent;
     font-size: 18px;
-    line-height: 2;
     text-align: left;
-    display: inline-block;
 }
 
 .skill_text02 {
-    padding-top: 30px;
+    padding-top: 10px;
     background-color: transparent;
     font-size: 20px;
 }
 
 .skill_tool {
     display: flex;
-    padding-top: 15px;
-    text-align: center;
-    width: 130px;
-    height: 44px;
+    padding-top: 8px;
 }
 
 .skill_tool p {
@@ -180,11 +191,18 @@
     background-color: #f3e9cf;
     margin-right: 14px;
     border-radius: 5px;
+    width: 130px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .skill_shape03 {
-    /* position: absolute; */
+    position: absolute;
     width: 8%;
+    top: 79%;
+    left: 63%;
 }
 
 /* worksセクション */
@@ -193,6 +211,131 @@
     max-width: 1366px;
 }
 
-.works h2 {
-    width: 152px;
+.works_inner {
+    position: relative;
+    /* display: inline-block; */
+    padding-top: 3%;
+    height: 777px;
+}
+
+.works_title {
+    position: absolute;
+    width: 452px;
+    left: 33%;
+    z-index: 1;
+    background-color: transparent;
+}
+
+/* .works_shape01 {
+    position: absolute;
+    width: 100%;
+} */
+
+.works_shape01 {
+    position: absolute;
+    width: 13%;
+    top: 15%;
+    left: 29%;
+}
+
+.works_content_wrap {
+    width: 1100px;
+    position: absolute;
+    left: 133px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    background-color: transparent;
+    padding-top: 170px;
+    z-index: 1;
+}
+
+.works_content_inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.works_content_img {
+    width: 310px;
+}
+
+.works_text {
+    background-color: transparent;
+    padding-top: 10px;
+}
+
+.works_tool {
+    background-color: transparent;
+}
+
+.works_shape03 {
+    position: absolute;
+    width: 100%;
+    top: 44%;
+}
+/* 
+.works_shape02 {
+    position: absolute;
+    top: 98%;
+    left: 10%;
+    width: 17%;
+} */
+
+.contact {
+    max-width: 1366px;
+    height: 1470px;
+}
+
+.contact_inner {
+    position: relative;
+}
+
+.contact_shape02 {
+    position: absolute;
+    /* top: 98%; */
+    left: 12%;
+    width: 16%;
+}
+
+.contact_inner {
+    position: absolute;
+    /* padding-top: ; */
+    /* padding-top: ; */
+}
+
+.contact_shape {
+    position: absolute;
+    width: 1366px;
+}
+
+.contact_title {
+    position: absolute;
+    width: 68%;
+    background-color: transparent;
+    top: 76%;
+    left: 38%;
+    z-index: 1;
+}
+
+.form_wrap {
+    position: absolute;
+    /* top: 458px;
+    left: 132px; */
+    width: 1100px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+}
+
+.form_inner {
+    padding-top: 20px;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
 }

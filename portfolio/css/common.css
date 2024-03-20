@@ -17,7 +17,7 @@ ul,
 li {
     margin: 0;
     padding: 0;
-    line-height: 1;
+    line-height: 2em;
     /*デフォルトの文字色、font-familyを予め当てておく*/
     color: #4f260b;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
@@ -54,18 +54,14 @@ img {
     border: none;
 }
 
-/* ボディー */
-body {
-    max-width: 1920px;
-}
-
 /* ヘッダー */
 .nav_list {
     max-width: 1100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 25px auto 25px;
+    margin: 0 auto;
+    padding: 25px 0;
 }
 
 .nav_logo {
@@ -74,10 +70,7 @@ body {
 
 .nav_list ul {
     display: flex;
-}
-
-.nav_list li {
-    padding: 0px 30px;
+    gap: 70px;
 }
 
 .li_about {
@@ -97,4 +90,78 @@ body {
 }
 .nav_list li:last-child {
     padding-right: 0px;
+}
+
+.inner {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+/* footerセクション */
+footer {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.footer_shape01_wrap {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer_shape01 {
+    position: absolute;
+    top: -250px;
+}
+
+.footer_inner {
+    width: 1100px;
+    padding-top: 94px;
+    margin: 0 auto;
+}
+
+.footer_button_wrap {
+    text-align: center;
+    padding-top: 13%;
+}
+.footer_button {
+    width: 224px;
+    height: 60px;
+    /* padding: 2% 0px; */
+    background: #f46159;
+    border-radius: 30px;
+    border: none;
+}
+
+.footer_button img {
+    width: 101px;
+}
+
+.footer_nav {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.footer_nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer_copy {
+    text-align: center;
+    padding-top: 65px;
+}
+
+.footer_copy img {
+    width: 209px;
+}
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    width: 151px;
+    height: 151px;
+    padding: 10px 15px;
 }

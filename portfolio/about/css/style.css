@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/* profileセクション */
+.profile {
+    max-width: 1366px;
+}
+
+.profile_inner {
+    position: relative;
+    height: 841px;
+    display: flex;
+    padding-top: 8%;
+}
+
+.profile_shape {
+    position: absolute;
+    left: 11%;
+}
+
+.profile_title {
+    position: absolute;
+    width: 8%;
+    left: 5%;
+    background-color: transparent;
+}
+
+.profile_content {
+    position: absolute;
+    top: 14%;
+    left: 20%;
+    width: 60%;
+    text-align: center;
+}
+
+.profile_name {
+    padding-top: 10px;
+    font-size: 36px;
+    background-color: transparent;
+}
+
+.profile_text {
+    font-size: 24px;
+    text-align: left;
+    background-color: transparent;
+}
+
+/* strangeセクション  */
+.strange {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.strange_shape01 {
+    position: absolute;
+    top: -9%;
+}
+
+.strange_inner {
+    position: relative;
+    padding-top: 315px;
+    height: 1878px;
+}
+
+.strange_shape02 {
+    position: absolute;
+    left: 61%;
+}
+.strange_title {
+    position: absolute;
+    left: 30%;
+    top: 15%;
+    background-color: transparent;
+    /* text-align: center; */
+}
+
+.strange_content_text {
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.strange_content_title {
+    background-color: transparent;
+    font-size: 48px;
+}
+
+.strange_content01 {
+    position: absolute;
+    top: 25%;
+    left: 6%;
+    width: 100%;
+}
+
+.strange_content01_inner {
+    position: absolute;
+    top: 27%;
+    left: 34%;
+    width: 47%;
+}
+
+.strange_content02 {
+    position: absolute;
+    top: 51%;
+    left: 54%;
+    width: 100%;
+}
+
+.strange_content02_inner {
+    position: absolute;
+    top: 51%;
+    left: 34%;
+    width: 47%;
+}
+
+.strange_content03 {
+    width: 574px;
+    margin-left: 544px;
+    margin-top: 328px;
+}
