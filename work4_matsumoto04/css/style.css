@@ -565,6 +565,10 @@ img {
         width: 38%;
     }
 
+    .gallary_list img {
+        width: 100%;
+    }
+
     /* event */
     .event {
         padding: 27px 19px 0;

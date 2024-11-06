@@ -22,7 +22,6 @@ li {
     color: #4f260b;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
         "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    background-color: #f3e9cf;
     font-feature-settings: "palt";
 }
 
@@ -54,23 +53,31 @@ img {
     border: none;
 }
 
+body {
+    background-color: #f3e9cf;
+}
+
 /* ヘッダー */
+/* header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+
 .nav_list {
-    max-width: 1100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    padding: 25px 0;
+    padding: 25px 11% 25px 11%;
 }
 
 .nav_logo {
-    width: 8%;
+    width: 10%;
 }
 
 .nav_list ul {
     display: flex;
-    gap: 70px;
+    column-gap: 60px;
 }
 
 .li_about {
@@ -92,6 +99,7 @@ img {
     padding-right: 0px;
 }
 
+/* mainセクション */
 .inner {
     max-width: 1366px;
     margin: 0 auto;
@@ -103,54 +111,81 @@ footer {
     margin: 0 auto;
 }
 
-.footer_shape01_wrap {
-    position: relative;
-    z-index: 0;
+.footer_shape_wrap {
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    z-index: 0;
+    height: 17px;
 }
-.footer_shape01 {
+
+.footer_shape {
     position: absolute;
-    top: -250px;
+    top: -1920%;
+    left: 53%;
+    width: 12%;
+}
+
+.footer_shape02 {
+    position: absolute;
+    top: -65px;
+    /* right: 35%; */
+    width: 43%;
 }
 
 .footer_inner {
-    width: 1100px;
-    padding-top: 94px;
+    max-width: 1100px;
     margin: 0 auto;
+    padding-top: 1%;
 }
 
 .footer_button_wrap {
-    text-align: center;
-    padding-top: 13%;
+    padding-top: 10%;
 }
+
 .footer_button {
-    width: 224px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 20%;
     height: 60px;
-    /* padding: 2% 0px; */
-    background: #f46159;
-    border-radius: 30px;
     border: none;
+    border-radius: 30px;
+    background: #f46159;
+    text-align: center;
+}
+
+.footer_button::before {
+    position: absolute;
+    top: 41%;
+    left: 30px;
+    width: 6px;
+    height: 10px;
+    background-image: url(../images/icon_arrow_left.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    content: "";
 }
 
 .footer_button img {
-    width: 101px;
+    width: 56%;
 }
 
 .footer_nav {
     text-align: center;
-    padding-top: 70px;
+    padding-top: 4%;
 }
 
 .footer_nav ul {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 .footer_copy {
     text-align: center;
-    padding-top: 65px;
+    padding-top: 5%;
 }
 
 .footer_copy img {
@@ -159,8 +194,9 @@ footer {
 
 .top {
     position: fixed;
-    bottom: 20px;
     right: 60px;
+    bottom: 20px;
+    z-index: 1;
     width: 151px;
     height: 151px;
     padding: 10px 15px;
